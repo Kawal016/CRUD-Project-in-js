@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record</title>
+     <link  href="crud.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="createStud active" >
+        <div class="container">
+          <div class="heading">
+        <h2>STUDENT FORM</h2>
+           </div>
+        <form class="form1">
+          <div class="fn">
+          <label>FIRSTNAME:</label>
+          <input type="text" placeholder="FirstName" class="form-filed" id="FS">
+          </div>
+          <div class=""ln>
+          <label>LASTNAME:</label>
+          <input type="text" placeholder="LastName" class="form-filed" id="LS">
+          </div>
+          <div class="em">
+          <label>EMAIL:</label>
+          <input type="email" placeholder="Email" class="form-filed" id="EM">
+          </div>
+          <div class="radio">
+            <label>CHOOSE OPTION:</label>
+          <input type="radio" name="gender" value="Male">
+         <label >Male</label><br>
+         <input type="radio" name="gender" value="Female">
+         <label>Female</label><br>
+          </div>
+          <div class="op">
+          <label>SELECT COURSE:</label>
+          <select id="Skill" class="se"> 
+            <option selected>C++</option>
+            <option>Java</option>
+            <option>Html</option>
+            <option>Python</option>
+          </select>
+          </div>  
+          <input type="hidden" id="rowId">
+        </form>
+        <button type="submit" id="bt">SUBMIT</button>
+        <button id="reset" type="Reset" value="Reset">RESET</button>
+        <button id="updat" class="update hide">UPDATE</button>
+        <div class="msg">
+
+        </div>
+        </div>
+    </div>
+
+     <div class="heading">
+        <h2>STUDENT RECORD</h2>
+    </div>
+
+     <div class="studtable">
+        <table class="tb" >
+          <tr id="row">
+            <th >ID</th>
+            <th >FIRSTNAME</th>
+            <th >LASTNAME</th>
+            <th >EMAIL</th>
+            <th>GENDER</th>
+            <th>COURSE</th>
+            <th >ACTION</th>
+          </tr>
+           <tbody id="b1">
+
+           </tbody>
+        </table>
+    </div>
+    <script src="crud.js"> </script>
+</body>
+</html>
